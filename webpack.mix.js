@@ -132,6 +132,8 @@ mix
     // Do not precache images
     exclude: [/\.(?:png|jpg|jpeg|svg)$/],
 
+    maximumFileSizeToCacheInBytes: 10485760,
+
     // Define runtime caching rules.
     runtimeCaching: [{
         // Match any request that ends with .png, .jpg, .jpeg or .svg.

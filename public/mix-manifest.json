@@ -1,6 +1,5 @@
 {
     "/js/main.js": "/js/main.js",
-    "/js/mainM.js": "/js/mainM.js",
     "/js/watchlist.js": "/js/watchlist.js",
     "/js/market.js": "/js/market.js",
     "/js/core/app-menu.js": "/js/core/app-menu.js",
@@ -548,7 +547,6 @@
     "/vendors/css/editors/quill/quill.bubble.css": "/vendors/css/editors/quill/quill.bubble.css",
     "/vendors/css/editors/quill/quill.snow.css": "/vendors/css/editors/quill/quill.snow.css",
     "/vendors/css/extensions/dragula.min.css": "/vendors/css/extensions/dragula.min.css",
-    "/vendors/css/extensions/flipclock.min.css": "/vendors/css/extensions/flipclock.min.css",
     "/vendors/css/extensions/jquery.contextMenu.min.css": "/vendors/css/extensions/jquery.contextMenu.min.css",
     "/vendors/css/extensions/jquery.rateyo.min.css": "/vendors/css/extensions/jquery.rateyo.min.css",
     "/vendors/css/extensions/jstree.min.css": "/vendors/css/extensions/jstree.min.css",
