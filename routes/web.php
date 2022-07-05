@@ -100,12 +100,12 @@ Route::get('lang/{locale}', 'LanguageController@swap');
 require_once __DIR__ . '/jetstream.php';
 require_once __DIR__ . '/fortify.php';
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+Route::middleware(['auth:sanctum'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
 Route::group(['middleware' => 'auth'], function() {
-    Route::group(['middleware' => 'verified', 'role:user', 'prefix' => 'user', 'as' => 'user.'], function() {
+    Route::group(['middleware' => 'role:user', 'prefix' => 'user', 'as' => 'user.'], function() {
 
         // Dashboard
         Route::get('dashboard/trade', 'UserController@dash')->middleware('checkKYC')->name('home.trade');
