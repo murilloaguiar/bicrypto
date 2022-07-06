@@ -24,3 +24,5 @@ build.list.js
 cdn_status.js
 cdn.config.js
 *-dev.js
+.editorconfig
+public/assets/images/cryptoCurrency/
