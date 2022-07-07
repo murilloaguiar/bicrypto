@@ -19,19 +19,19 @@
               <div class="card-body">
                   <a href="#" class="col d-flex justify-content-center mb-1">
                       <img style="height:50px;" src="{{getImage(imagePath()['logoIcon']['path'] .'/favicon.png')}}"
-                          alt="{{ __('locale.image')}}">
+                          alt="{{ __('image')}}">
                       <div class="brand-text"><img src="{{getImage(imagePath()['logoIcon']['path'] .'/logo.png')}}"
-                              alt="{{ __('locale.image')}}"></div>
+                              alt="{{ __('image')}}"></div>
                   </a>
 
-                  <h4 class="card-title mb-1">Adventure starts here 🚀</h4>
-                  <p class="card-text mb-2">Register to access the trading platform!</p>
+                  <h4 class="card-title mb-1">{{__('Adventure starts here')}} 🚀</h4>
+                  <p class="card-text mb-2">{{__('Register to access the trading platform!')}}</p>
 
                   <form class="auth-register-form mt-2" method="POST" action="{{ route('register') }}">
                       @csrf
                       <div class="row">
                           <div class="col-lg-6 mb-1">
-                              <label for="register-username" class="form-label">Username</label>
+                              <label for="register-username" class="form-label">{{__('Username')}}</label>
                               <input type="text" class="form-control @error('username') is-invalid @enderror"
                                   id="register-username" name="username" placeholder="johndoe"
                                   aria-describedby="register-username" tabindex="1" autofocus
@@ -56,7 +56,7 @@
                       </div>
                       <div class="row">
                           <div class="col-lg-6 mb-1">
-                              <label for="register-password" class="form-label">Password</label>
+                              <label for="register-password" class="form-label">{{__('Password')}}</label>
 
                               <div
                                   class="input-group input-group-merge form-password-toggle @error('password') is-invalid @enderror">
@@ -75,7 +75,7 @@
                           </div>
 
                           <div class="col-lg-6 mb-1">
-                              <label for="register-password-confirm" class="form-label">Confirm Password</label>
+                              <label for="register-password-confirm" class="form-label">{{__('Confirm Password')}}</label>
 
                               <div class="input-group input-group-merge form-password-toggle">
                                   <input type="password" class="form-control form-control-merge"
@@ -88,7 +88,7 @@
                       </div>
               <div class="row">
                   <div class="mb-1 col-md-6">
-                      <label class="form-label" for="firstname">First Name</label>
+                      <label class="form-label" for="firstname">{{__('First Name')}}</label>
                       <input type="text" name="firstname" id="firstname"
                           class="form-control @error('firstname') is-invalid @enderror" placeholder="John"
                           aria-describedby="register-firstname" tabindex="4" autofocus value="{{ old('firstname') }}" />
@@ -99,7 +99,7 @@
                       @enderror
                   </div>
                   <div class="mb-1 col-md-6">
-                      <label class="form-label" for="lastname">Last Name</label>
+                      <label class="form-label" for="lastname">{{__('Last Name')}}</label>
                       <input type="text" name="lastname" id="lastname"
                           class="form-control @error('lastname') is-invalid @enderror" placeholder="Doe"
                           aria-describedby="register-lastname" tabindex="5" autofocus value="{{ old('lastname') }}" />
@@ -112,7 +112,7 @@
               </div>
               <div class="row">
                   <div class="col-md-6 mb-1">
-                      <label class="form-label" for="mobile">Mobile number</label>
+                      <label class="form-label" for="mobile">{{__('Mobile number')}}</label>
                       <div class="input-group">
                           <select name="country_code">
                               @include('partials.country_code')
@@ -129,21 +129,21 @@
                       @enderror
                   </div>
                   <div class="mb-1 col-md-6">
-                      <label class="form-label" for="country">Country</label>
+                      <label class="form-label" for="country">{{__('Country')}}</label>
                       <div class="input-group">
                           <span class="input-group-text h-100">
                               <i class="bi bi-globe"></i>
                           </span>
                           <input type="text" class="form-control @error('country') is-invalid @enderror" id="country"
-                              name="country" placeholder="Country" aria-describedby="country" tabindex="7"
+                              name="country" placeholder="{{__('Country')}}" aria-describedby="country" tabindex="7"
                               value="{{ old('country') }}" required="" readonly="" />
                       </div>
                   </div>
               </div>
               <div class="col-12 mb-1">
-                  <label class="form-label" for="address">Address</label>
+                  <label class="form-label" for="address">{{__('Address')}}</label>
                   <input type="text" name="address" id="address" class="form-control @error('address') is-invalid @enderror"
-                      placeholder="Address" aria-describedby="register-address" tabindex="8" autofocus
+                      placeholder="{{__('Address')}}" aria-describedby="register-address" tabindex="8" autofocus
                       value="{{ old('address') }}" />
                   @error('address')
                   <span class="invalid-feedback" role="alert">
@@ -153,9 +153,9 @@
               </div>
 
               <div class="col-12 mb-1">
-                  <label class="form-label" for="town">Town</label>
+                  <label class="form-label" for="town">{{__('Town')}}</label>
                   <input type="text" name="town" id="town" class="form-control @error('town') is-invalid @enderror"
-                      placeholder="Town, Area, Street, Sector, Village" aria-describedby="register-town" tabindex="9"
+                      aria-describedby="register-town" tabindex="9"
                       autofocus value="{{ old('town') }}" />
                   @error('town')
                   <span class="invalid-feedback" role="alert">
@@ -165,9 +165,9 @@
               </div>
               <div class="row">
                   <div class="mb-1 col-md-8">
-                      <label class="form-label" for="city">City</label>
+                      <label class="form-label" for="city">{{__('City')}}</label>
                       <input type="text" name="city" id="city" class="form-control @error('city') is-invalid @enderror"
-                          placeholder="City" aria-describedby="register-city" tabindex="10" autofocus
+                          placeholder="{{__('City')}}" aria-describedby="register-city" tabindex="10" autofocus
                           value="{{ old('city') }}" />
                       @error('city')
                       <span class="invalid-feedback" role="alert">
@@ -176,9 +176,9 @@
                       @enderror
                   </div>
                   <div class="col-md-4 mb-1">
-                      <label class="form-label" for="zip">Zip code</label>
+                      <label class="form-label" for="zip">{{__('Zip code')}}</label>
                       <input type="text" name="zip" id="zip"
-                          class="form-control @error('zip') is-invalid @enderror zip-code-mask" placeholder="Code"
+                          class="form-control @error('zip') is-invalid @enderror zip-code-mask" placeholder="{{__('Code')}}"
                           maxlength="6" aria-describedby="register-zip" tabindex="11" autofocus
                           value="{{ old('zip') }}" />
                       @error('zip')
@@ -191,7 +191,7 @@
               @if(session()->get('reference') != null)
               <div class="row">
                   <div class="col-12 mt-1">
-                      <label for="multiStepsreferenceBy" class="form-label">Reference By</label>
+                      <label for="multiStepsreferenceBy" class="form-label">{{__('Reference By')}}</label>
                       <input type="text" class="form-control" id="multiStepsreferenceBy" name="multiStepsreferBy"
                           placeholder="johndoe" aria-describedby="referenceBy" tabindex="1" autofocus
                           value="{{session()->get('reference')}}" readonly />
@@ -204,20 +204,20 @@
                   <div class="form-check">
                       <input class="form-check-input" type="checkbox" id="terms" name="terms" tabindex="4" />
                       <label class="form-check-label" for="terms">
-                          I agree to the <a href="{{ route('terms.show') }}" target="_blank">Terms of Service</a> and
-                          <a href="{{ route('policy.show') }}" target="_blank">Privacy Policy</a>
+                          {{__('I agree to the')}} <a href="{{ route('terms.show') }}" target="_blank">{{__('Terms of Service')}}</a> {{__('and')}}
+                          <a href="{{ route('policy.show') }}" target="_blank">{{__('Privacy Policy')}}</a>
                       </label>
                   </div>
               </div>
               @endif
-              <button type="submit" class="btn btn-primary w-100" tabindex="5">Sign up</button>
+              <button type="submit" class="btn btn-primary w-100" tabindex="5">{{__('Sign up')}}</button>
               </form>
 
               <p class="text-center mt-2">
-                  <span>Already have an account?</span>
+                  <span>{{__('Already have an account?')}}</span>
                   @if (Route::has('login'))
                   <a href="{{ route('login') }}">
-                      <span>Sign in instead</span>
+                      <span>{{__('Sign in instead')}}</span>
                   </a>
                   @endif
               </p>
