@@ -7,9 +7,9 @@ $configData = applClasses();
       <li class="nav-item me-auto">
         <a class="navbar-brand" href="{{route('user.home')}}">
           <span class="brand-logo">
-            <img src="{{getImage(imagePath()['logoIcon']['path'] .'/favicon.png')}}" alt="{{ __('locale.image')}}">
+            <img src="{{getImage(imagePath()['logoIcon']['path'] .'/favicon.png')}}" alt="{{ __('image')}}">
           </span>
-          <div class="brand-text"><img src="{{getImage(imagePath()['logoIcon']['path'] .'/logo.png')}}" alt="{{ __('locale.image')}}"></div>
+          <div class="brand-text"><img src="{{getImage(imagePath()['logoIcon']['path'] .'/logo.png')}}" alt="{{ __('image')}}"></div>
         </a>
       </li>
       <li class="nav-item nav-toggle">
@@ -28,7 +28,7 @@ $configData = applClasses();
       @foreach($usermenuData[0]->menu as $menu)
       @if(isset($menu->navheader))
       <li class="navigation-header">
-        <span>{{ __('locale.'.$menu->navheader) }}</span>
+        <span>{{ __($menu->navheader) }}</span>
         <i class="bi bi-three-dots-vertical"></i>
       </li>
       @else
@@ -42,7 +42,7 @@ $configData = applClasses();
       <li class="nav-item {{ $custom_classes }} {{Route::currentRouteName() === $menu->slug ? 'active' : ''}}">
         <a href="{{isset($menu->url)? url($menu->url):'javascript:void(0)'}}" class="d-flex align-items-center" target="{{isset($menu->newTab) ? '_blank':'_self'}}">
           <i class="bi bi-{{ $menu->icon }}"></i>
-          <span class="menu-title text-truncate">{{ __('locale.'.$menu->name) }}</span>
+          <span class="menu-title text-truncate">{{ __($menu->name) }}</span>
           @if (isset($menu->badge))
           <?php $badgeClasses = "badge rounded-pill badge-light-primary ms-auto me-1" ?>
           <span class="{{ isset($menu->badgeClass) ? $menu->badgeClass : $badgeClasses }}">{{$menu->badge}}</span>

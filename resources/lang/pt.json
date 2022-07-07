@@ -121,6 +121,12 @@
    "Sign in instead": "Entre em vez disso",
    "Sign up": "Inscrever-se",
 
+   "Create Wallet":"Criar carteira",
+   "Practice Account": "Conta prática",
+   "Top Up": "Completar",
+   "Trade Account": "Conta comercial",
+   "View All Wallets": "Ver todas as carteiras",
+   "Account Balances": "Saldos da conta",
 
    "This week": "Essa semana",
    "Home": "Casa",
@@ -319,7 +325,7 @@
    "Practice Wallet": "Pratique carteira",
    "Buy": "Comprar",
    "Sell": "Vender",
-   "Crypto Exchange": "Troca de criptografia",
+   "Crypto Exchange": "Troca de criptomoedas",
    "Exchange Fee": "Taxa de câmbio",
    "Wallet Exchange": "Troca de carteira",
    "Amount To Exchange": "Valor para trocar",

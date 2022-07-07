@@ -101,7 +101,7 @@
         @elseif (Request::is('**/practice*'))
         <button type="button" class="btn btn-icon btn-outline-warning mx-1" data-bs-toggle="collapse" data-bs-target="#Wallet"><span class="text-warning">{{__('Practice')}}: {{$general->cur_sym}} <livewire:partials.practice-balance /></span></button>
         @else
-            <button type="button" class="btn btn-icon btn-outline-secondary mx-1" data-bs-toggle="collapse" data-bs-target="#Wallet"><span class="text-secondary">Select Wallet</span></button>
+            <button type="button" class="btn btn-icon btn-outline-secondary mx-1" data-bs-toggle="collapse" data-bs-target="#Wallet"><span class="text-secondary">{{__('Select Wallet')}}</span></button>
         @endif
     </li>
 
@@ -160,17 +160,17 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">{{ __('locale.Add Crypto Currency')}}</h5>
+                <h5 class="modal-title">{{ __('Add Crypto Currency')}}</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <form action="{{route('user.watchlist.store')}}" method="POST">
                 <input type="hidden" id="inputfav" name="id">
                 <div class="modal-body">
-                    <p>{{ __('locale.Are you sure want to watchlist this coin')}}</p>
+                    <p>{{ __('Are you sure want to watchlist this coin')}}</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ __('locale.Close')}}</button>
-                    <button type="submit" class="btn btn-success">{{ __('locale.Add')}}</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ __('Close')}}</button>
+                    <button type="submit" class="btn btn-success">{{ __('Add')}}</button>
                 </div>
                 @csrf
             </form>
@@ -208,7 +208,7 @@
     <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
-                <h6 class="modal-title">{{ __('locale.Add Practice Balance')}}</h6>
+                <h6 class="modal-title">{{ __('Add Practice Balance')}}</h6>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                     <i class="bi bi-x"></i>
                 </button>
@@ -216,12 +216,12 @@
             <form class="deposit-form" action="{{route('user.add.practice.balance')}}" method="POST">
                 @csrf
                 <div class="modal-body">
-                    <p>{{ __('locale.Are you sure you want to add practice balance')}}?</p>
+                    <p>{{ __('Are you sure you want to add practice balance')}}?</p>
                 </div>
 
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary btn-sm text--white btn-danger" data-bs-dismiss="modal">{{ __('locale.Close')}}</button>
-                    <button type="submit" class="btn btn-primary btn-sm text--white btn-success">{{ __('locale.Confirm')}}</button>
+                    <button type="button" class="btn btn-primary btn-sm text--white btn-danger" data-bs-dismiss="modal">{{ __('Close')}}</button>
+                    <button type="submit" class="btn btn-primary btn-sm text--white btn-success">{{ __('Confirm')}}</button>
                 </div>
             </form>
         </div>
