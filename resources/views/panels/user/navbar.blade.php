@@ -99,7 +99,7 @@
         @if (Request::is('**/trade*'))
         <button type="button" class="btn btn-icon btn-outline-success mx-1" data-bs-toggle="collapse" data-bs-target="#Wallet"><span class="text-success">Trade: {{$general->cur_sym}} <livewire:partials.balance /></span></button>
         @elseif (Request::is('**/practice*'))
-        <button type="button" class="btn btn-icon btn-outline-warning mx-1" data-bs-toggle="collapse" data-bs-target="#Wallet"><span class="text-warning">Practice: {{$general->cur_sym}} <livewire:partials.practice-balance /></span></button>
+        <button type="button" class="btn btn-icon btn-outline-warning mx-1" data-bs-toggle="collapse" data-bs-target="#Wallet"><span class="text-warning">{{__('Practice')}}: {{$general->cur_sym}} <livewire:partials.practice-balance /></span></button>
         @else
             <button type="button" class="btn btn-icon btn-outline-secondary mx-1" data-bs-toggle="collapse" data-bs-target="#Wallet"><span class="text-secondary">Select Wallet</span></button>
         @endif
@@ -132,20 +132,20 @@
             </span>
         </a>
         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-user">
-            <h6 class="dropdown-header">Manage Profile</h6>
+            <h6 class="dropdown-header">{{__('Manage Profile')}}</h6>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item"
                 href="{{ Route::has('user.profile.show') ? route('user.profile.show') : 'javascript:void(0)' }}">
-                <i class="bi bi-person-circle me-50"></i> Profile
+                <i class="bi bi-person-circle me-50"></i> {{__('Profile')}}
             </a>
             <a class="dropdown-item"
                 href="{{ Route::has('ticket') ? route('ticket') : 'javascript:void(0)' }}">
-                <i class="bi bi-person-circle me-50"></i> Support
+                <i class="bi bi-person-circle me-50"></i> {{__('Support')}}
             </a>
             @if (Auth::check())
             <a class="dropdown-item" href="{{ route('logout') }}"
                 onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                <i class="bi bi-box-arrow-in-left me-50"></i> Logout
+                <i class="bi bi-box-arrow-in-left me-50"></i> {{__('Logout')}}
             </a>
             <form method="POST" id="logout-form" action="{{ route('logout') }}">
                 @csrf

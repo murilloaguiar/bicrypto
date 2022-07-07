@@ -16,15 +16,15 @@
         <div class="col-xl-4 col-md-6 col-12">
             <div class="card card-congratulation-medal">
                 <div class="card-body">
-                    <h5>Welcome 🎉 {{auth()->user()->firstname}}</h5>
-                    <p class="card-text font-small-3">You have earned</p>
+                    <h5>{{__('Welcome')}} 🎉 {{auth()->user()->firstname}}</h5>
+                    <p class="card-text font-small-3">{{__('You have earned')}}</p>
                     <h3 class="mb-75 mt-2 pt-50">
                         <a href="#">$ {{ number_format($tradeWon, 2) }}</a>
                     </h3>
                     @if (Request::is('**/trade*'))
-                    <a href="{{route('user.trade.market')}}" type="button" class="btn btn-primary">Start Trading</a>
+                    <a href="{{route('user.trade.market')}}" type="button" class="btn btn-primary">{{__('Start Trading')}}</a>
                     @elseif (Request::is('**/practice*'))
-                    <a href="{{route('user.practice.market')}}" type="button" class="btn btn-primary">Start Trading</a>
+                    <a href="{{route('user.practice.market')}}" type="button" class="btn btn-primary">{{__('Start Trading')}}</a>
                     @endif
                     <img src="{{asset('images/illustration/badge.svg')}}" class="congratulation-medal"
                         alt="Medal Pic" />
@@ -38,11 +38,11 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-6">
-                            <h4 class="card-title mb-2">Earnings</h4>
-                            <div class="font-small-3">This Week</div>
+                            <h4 class="card-title mb-2">{{__('Earnings')}}</h4>
+                            <div class="font-small-3">{{__('This Week')}}</div>
                             <h5 class="mb-1">$ {{ to_num($perc['tradeWon_last_week'], 0, ',', false) }}</h5>
                             <p class="card-text text-muted font-small-3">
-                                <span class="fw-bolder">{{ $perc['tradeWon_last_week_percentage'] }}%</span><span> Won since last week.</span>
+                                <span class="fw-bolder">{{ $perc['tradeWon_last_week_percentage'] }}%</span><span> {{__('Won since last week.')}}</span>
                             </p>
                         </div>
                         <div class="col-6">
@@ -66,7 +66,7 @@
                             <livewire:partials.balance />
                         </div>
                         @else
-                        <p class="mb-1 fs-14 text-warning">Balance</p>
+                        <p class="mb-1 fs-14 text-warning">{{__('Balance')}}</p>
                         <div class="d-flex justify-content-between">
                             <div class="h2 text-warning mb-1">
                                 {{$general->cur_sym}}
@@ -76,11 +76,11 @@
                         </div>
                         <div class="d-flex">
                             <div class="">
-                                <p class="font-small-2 me-1">VALID THRU</p>
+                                <p class="font-small-2 me-1">{{__('VALID THRU')}}</p>
                                 <span>08/22</span>
                             </div>
                             <div class="">
-                                <p class="font-small-2">CARD HOLDER</p>
+                                <p class="font-small-2">{{__('CARD HOLDER')}}</p>
                                 <span class="card-text text-info font-small-3">{{auth()->user()->firstname}}
                                     {{auth()->user()->lastname}}</span>
                             </div>
@@ -103,7 +103,7 @@
                                 </div>
                             </div>
                             <h2 class="fw-bolder">{{$tradeLog}}</h2>
-                            <p class="card-text">Total Trade Log</p>
+                            <p class="card-text">{{__('Total Trade Log')}}</p>
                         </div>
                     </div>
                 </div>
@@ -116,7 +116,7 @@
                                 </div>
                             </div>
                             <h2 class="fw-bolder">{{$tradeWin}}</h2>
-                            <p class="card-text">Total Wining Trade</p>
+                            <p class="card-text">{{__('Total Wining Trade')}}</p>
                         </div>
                     </div>
                 </div>
@@ -131,7 +131,7 @@
                                 </div>
                             </div>
                             <h2 class="fw-bolder">{{$tradeDraw}}</h2>
-                            <p class="card-text">Total Draw Trade</p>
+                            <p class="card-text">{{__('Total Draw Trade')}}</p>
                         </div>
                     </div>
                 </div>
@@ -144,7 +144,7 @@
                                 </div>
                             </div>
                             <h2 class="fw-bolder">{{$tradeLose}}</h2>
-                            <p class="card-text">Total Losing Trade</p>
+                            <p class="card-text">{{__('Total Losing Trade')}}</p>
                         </div>
                     </div>
                 </div>
@@ -155,7 +155,7 @@
         <div class="col-lg-4 col-md-6">
             <div class="card card-transaction">
                 <div class="card-header">
-                    <h4 class="card-title">Contracts</h4>
+                    <h4 class="card-title">{{__('Contracts')}}</h4>
                     {{-- <div class="dropdown chart-dropdown">
                         <i class="bi bi-three-dots-vertical font-medium-3 cursor-pointer"
                             data-bs-toggle="dropdown"></i>
@@ -212,7 +212,7 @@
                             </div>
                         </div>
                     @empty
-                    <div colspan="100%"> {{ __('locale.No results found')}}!</div>
+                    <div colspan="100%"> {{ __('No results found')}}!</div>
                     @endforelse
                 </div>
             </div>
@@ -260,14 +260,14 @@
             <div class="card">
                 <div class="card-body text-center mt-3">
                     <i class="bi bi-gift text-warning font-large-2 mb-1"></i>
-                    <h5 class="card-title">Refer & Earn</h5>
+                    <h5 class="card-title">{{__('Refer & Earn')}}</h5>
                     <p class="card-text">
-                        Refer your friends & Earn for 5% of every customer that complete 1 deposit in the platform.
+                        {{__('Refer your friends & Earn for 5% of every customer that complete 1 deposit in the platform.')}}
                     </p>
                     <!-- modal trigger button -->
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                         data-bs-target="#referEarnModal">
-                        Invite
+                        {{__('Invite')}}
                     </button>
                 </div>
             </div>
