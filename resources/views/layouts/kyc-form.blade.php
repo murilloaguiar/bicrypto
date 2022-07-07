@@ -308,8 +308,8 @@ $step_02 = ($step_01 && $has_docs) ? '02' : '';
                   <div class="form-check">
                       <input class="form-check-input" type="checkbox" id="term-condition" name="condition" required="required" data-msg-required="{{ __("You should read our terms and policy.") }}"/>
                       <label class="form-check-label" for="term-condition">
-                          I agree to the <a href="{{ route('terms.show') }}" target="_blank">terms_of_service</a> and
-                          <a href="{{ route('policy.show') }}" target="_blank">privacy_policy</a>
+                          {{__('I agree to the')}} <a href="{{ route('terms.show') }}" target="_blank">{{__('terms_of_service')}}</a> {{__('and')}}
+                          <a href="{{ route('policy.show') }}" target="_blank">{{__('privacy_policy')}}</a>
                       </label>
                   </div>
               </div>
