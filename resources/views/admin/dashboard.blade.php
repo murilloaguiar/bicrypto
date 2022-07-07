@@ -5,8 +5,8 @@
             <div class="card">
               <div class="card-header align-items-start pb-0">
                 <div>
-                  <h2 class="fw-bolder">{{$widget['total_users']}} <a href="{{route('admin.users.all')}}" class="btn btn-sm text-small bg--white text-red">{{ __('locale.View All')}}</a></h2>
-                  <p class="card-text">{{ __('locale.Users')}}</p>
+                  <h2 class="fw-bolder">{{$widget['total_users']}} <a href="{{route('admin.users.all')}}" class="btn btn-sm text-small bg--white text-red">{{ __('View All')}}</a></h2>
+                  <p class="card-text">{{ __('Users')}}</p>
                 </div>
                 <div class="avatar bg-light-success p-50">
                   <div class="avatar-content">
@@ -22,8 +22,8 @@
             <div class="card">
               <div class="card-header align-items-start pb-0">
                 <div>
-                  <h2 class="fw-bolder">{{$widget['verified_users']}} <a href="{{route('admin.users.active')}}" class="btn btn-sm text-small bg--white text-red">{{ __('locale.View All')}}</a></h2>
-                  <p class="card-text">{{ __('locale.Verified Users')}}</p>
+                  <h2 class="fw-bolder">{{$widget['verified_users']}} <a href="{{route('admin.users.active')}}" class="btn btn-sm text-small bg--white text-red">{{ __('View All')}}</a></h2>
+                  <p class="card-text">{{ __('Verified Users')}}</p>
                 </div>
                 <div class="avatar bg-light-success p-50">
                   <div class="avatar-content">
@@ -39,8 +39,8 @@
             <div class="card">
               <div class="card-header align-items-start pb-0">
                 <div>
-                  <h2 class="fw-bolder">{{$widget['email_unverified_users']}} <a href="{{route('admin.users.emailUnverified')}}" class="btn btn-sm text-small bg--white text-red">{{ __('locale.View All')}}</a></h2>
-                  <p class="card-text">{{ __('locale.Email Unverified Users')}}</p>
+                  <h2 class="fw-bolder">{{$widget['email_unverified_users']}} <a href="{{route('admin.users.emailUnverified')}}" class="btn btn-sm text-small bg--white text-red">{{ __('View All')}}</a></h2>
+                  <p class="card-text">{{ __('Email Unverified Users')}}</p>
                 </div>
                 <div class="avatar bg-light-success p-50">
                   <div class="avatar-content">
@@ -56,8 +56,8 @@
             <div class="card">
               <div class="card-header align-items-start pb-0">
                 <div>
-                  <h2 class="fw-bolder">{{$widget['sms_unverified_users']}} <a href="{{route('admin.users.smsUnverified')}}" class="btn btn-sm text-small bg--white text-red">{{ __('locale.View All')}}</a></h2>
-                  <p class="card-text">{{ __('locale.SMS Unverified Users')}}</p>
+                  <h2 class="fw-bolder">{{$widget['sms_unverified_users']}} <a href="{{route('admin.users.smsUnverified')}}" class="btn btn-sm text-small bg--white text-red">{{ __('View All')}}</a></h2>
+                  <p class="card-text">{{ __('SMS Unverified Users')}}</p>
                 </div>
                 <div class="avatar bg-light-success p-50">
                   <div class="avatar-content">
@@ -73,8 +73,8 @@
             <div class="card">
               <div class="card-header align-items-start pb-0">
                 <div>
-                  <h2 class="fw-bolder">{{ $kyc['totalkyc'] }} <a href="kyc_list" class="btn btn-sm text-small bg-white text-red">{{ __('locale.View All')}}</a></h2>
-                  <p class="card-text">{{ __('locale.KYC Applications')}}</p>
+                  <h2 class="fw-bolder">{{ $kyc['totalkyc'] }} <a href="kyc_list" class="btn btn-sm text-small bg-white text-red">{{ __('View All')}}</a></h2>
+                  <p class="card-text">{{ __('KYC Applications')}}</p>
                 </div>
                 <div class="avatar bg-light-success p-50">
                   <div class="avatar-content">
@@ -89,8 +89,8 @@
             <div class="card">
               <div class="card-header align-items-start pb-0">
                 <div>
-                  <h2 class="fw-bolder">{{ $kyc['pendingkyc'] }} <a href="kyc_list/pending" class="btn btn-sm text-small bg-white text-red">{{ __('locale.View All')}}</a></h2>
-                  <p class="card-text">{{ __('locale.Pending KYC')}}</p>
+                  <h2 class="fw-bolder">{{ $kyc['pendingkyc'] }} <a href="kyc_list/pending" class="btn btn-sm text-small bg-white text-red">{{ __('View All')}}</a></h2>
+                  <p class="card-text">{{ __('Pending KYC')}}</p>
                 </div>
                 <div class="avatar bg-light-success p-50">
                   <div class="avatar-content">
@@ -105,8 +105,8 @@
             <div class="card">
               <div class="card-header align-items-start pb-0">
                 <div>
-                  <h2 class="fw-bolder">{{ $kyc['missingkyc'] }} <a href="kyc_list/missing" class="btn btn-sm text-small bg-white text-red">{{ __('locale.View All')}}</a></h2>
-                  <p class="card-text">{{ __('locale.Missing KYC')}}</p>
+                  <h2 class="fw-bolder">{{ $kyc['missingkyc'] }} <a href="kyc_list/missing" class="btn btn-sm text-small bg-white text-red">{{ __('View All')}}</a></h2>
+                  <p class="card-text">{{ __('Missing KYC')}}</p>
                 </div>
                 <div class="avatar bg-light-success p-50">
                   <div class="avatar-content">
@@ -121,8 +121,8 @@
             <div class="card">
               <div class="card-header align-items-start pb-0">
                 <div>
-                  <h2 class="fw-bolder">{{ $kyc['approvedkyc'] }} <a href="kyc_list/approved" class="btn btn-sm text-small bg-white text-red">{{ __('locale.View All')}}</a></h2>
-                  <p class="card-text">{{ __('locale.Approved KYC')}}</p>
+                  <h2 class="fw-bolder">{{ $kyc['approvedkyc'] }} <a href="kyc_list/approved" class="btn btn-sm text-small bg-white text-red">{{ __('View All')}}</a></h2>
+                  <p class="card-text">{{ __('Approved KYC')}}</p>
                 </div>
                 <div class="avatar bg-light-success p-50">
                   <div class="avatar-content">
@@ -138,8 +138,8 @@
             <div class="card">
               <div class="card-header align-items-start pb-0">
                 <div>
-                  <h2 class="fw-bolder">{{$cryptoCurrency}} <a href="{{route('admin.crypto.index')}}" class="btn btn-sm text-small bg--white text-red">{{ __('locale.View All')}}</a></h2>
-                  <p class="card-text">{{ __('locale.Crypto Currency')}}</p>
+                  <h2 class="fw-bolder">{{$cryptoCurrency}} <a href="{{route('admin.crypto.index')}}" class="btn btn-sm text-small bg--white text-red">{{ __('View All')}}</a></h2>
+                  <p class="card-text">{{ __('Crypto Currency')}}</p>
                 </div>
                 <div class="avatar bg-light-success p-50">
                   <div class="avatar-content">
@@ -155,8 +155,8 @@
             <div class="card">
               <div class="card-header align-items-start pb-0">
                 <div>
-                  <h2 class="fw-bolder">{{$tradeLog['log']}} <a href="{{route('admin.trade.log.list')}}" class="btn btn-sm text-small bg--white text-red">{{ __('locale.View All')}}</a></h2>
-                  <p class="card-text">{{ __('locale.Trade Log')}}</p>
+                  <h2 class="fw-bolder">{{$tradeLog['log']}} <a href="{{route('admin.trade.log.list')}}" class="btn btn-sm text-small bg--white text-red">{{ __('View All')}}</a></h2>
+                  <p class="card-text">{{ __('Trade Log')}}</p>
                 </div>
                 <div class="avatar bg-light-success p-50">
                   <div class="avatar-content">
@@ -172,8 +172,8 @@
             <div class="card">
               <div class="card-header align-items-start pb-0">
                 <div>
-                  <h2 class="fw-bolder">{{$tradeLog['wining']}} <a href="{{route('admin.trade.log.wining')}}" class="btn btn-sm text-small bg--white text-red">{{ __('locale.View All')}}</a></h2>
-                  <p class="card-text">{{ __('locale.Wining Trade')}}</p>
+                  <h2 class="fw-bolder">{{$tradeLog['wining']}} <a href="{{route('admin.trade.log.wining')}}" class="btn btn-sm text-small bg--white text-red">{{ __('View All')}}</a></h2>
+                  <p class="card-text">{{ __('Wining Trade')}}</p>
                 </div>
                 <div class="avatar bg-light-success p-50">
                   <div class="avatar-content">
@@ -189,8 +189,8 @@
             <div class="card">
               <div class="card-header align-items-start pb-0">
                 <div>
-                  <h2 class="fw-bolder">{{$tradeLog['losing']}} <a href="{{route('admin.trade.log.losing')}}" class="btn btn-sm text-small bg--white text-red">{{ __('locale.View All')}}</a></h2>
-                  <p class="card-text">{{ __('locale.Losing Trade')}}</p>
+                  <h2 class="fw-bolder">{{$tradeLog['losing']}} <a href="{{route('admin.trade.log.losing')}}" class="btn btn-sm text-small bg--white text-red">{{ __('View All')}}</a></h2>
+                  <p class="card-text">{{ __('Losing Trade')}}</p>
                 </div>
                 <div class="avatar bg-light-success p-50">
                   <div class="avatar-content">
@@ -207,7 +207,7 @@
         <div class="col-xl-6">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">{{ __('locale.Monthly  Deposit & Withdraw  Report')}}</h5>
+                    <h5 class="card-title">{{ __('Monthly  Deposit & Withdraw  Report')}}</h5>
                     <div id="apex-bar-chart"> </div>
                 </div>
             </div>
@@ -223,7 +223,7 @@
                           </div>
                         </div>
                         <h2 class="fw-bolder">{{$payment['total_deposit']}}</h2>
-                        <p class="card-text">{{ __('locale.Deposit')}}</p>
+                        <p class="card-text">{{ __('Deposit')}}</p>
                       </div>
                     </div>
                   </div>
@@ -237,7 +237,7 @@
                           </div>
                         </div>
                         <h2 class="fw-bolder">{{getAmount($payment['total_deposit_amount'])}} {{__($general->cur_text)}}</h2>
-                        <p class="card-text">{{ __('locale.Deposited Amount')}}</p>
+                        <p class="card-text">{{ __('Deposited Amount')}}</p>
                       </div>
                     </div>
                   </div></div>
@@ -251,7 +251,7 @@
                           </div>
                         </div>
                         <h2 class="fw-bolder">{{getAmount($payment['total_deposit_charge'])}} {{__($general->cur_text)}}</h2>
-                        <p class="card-text">{{ __('locale.Deposit Charge')}}</p>
+                        <p class="card-text">{{ __('Deposit Charge')}}</p>
                       </div>
                     </div>
                   </div>
@@ -265,7 +265,7 @@
                           </div>
                         </div>
                         <h2 class="fw-bolder">{{$payment['total_deposit_pending']}}</h2>
-                        <p class="card-text">{{ __('locale.Pending Deposit')}}</p>
+                        <p class="card-text">{{ __('Pending Deposit')}}</p>
                       </div>
                     </div>
                   </div>
@@ -282,9 +282,9 @@
                     <div>
                         <h2 class="fw-bolder mt-1">{{ $paymentWithdraw['total_withdraw'] }} <a
                                 href="{{ route('admin.withdraw.method.index') }}"
-                                class="btn btn-sm text-small bg--white text-red">{{ __('locale.View All')}}</a>
+                                class="btn btn-sm text-small bg--white text-red">{{ __('View All')}}</a>
                         </h2>
-                        <p class="card-text">{{ __('locale.Withdraw')}}</p>
+                        <p class="card-text">{{ __('Withdraw')}}</p>
                     </div>
                     <div class="avatar bg-light-primary p-50 m-0">
                         <div class="avatar-content">
@@ -304,7 +304,7 @@
                             {{ getAmount($paymentWithdraw['total_withdraw_amount']) }}
                             {{ __($general->cur_text) }}
                         </h2>
-                        <p class="card-text">{{ __('locale.Withdraw')}}</p>
+                        <p class="card-text">{{ __('Withdraw')}}</p>
                     </div>
                     <div class="avatar bg-light-primary p-50 m-0">
                         <div class="avatar-content">
@@ -322,7 +322,7 @@
                     <div>
                         <h2 class="fw-bolder mt-1">{{getAmount($paymentWithdraw['total_withdraw_charge'])}} {{__($general->cur_text)}}
                         </h2>
-                        <p class="card-text">{{ __('locale.Withdraw Charge')}}</p>
+                        <p class="card-text">{{ __('Withdraw Charge')}}</p>
                     </div>
                     <div class="avatar bg-light-primary p-50 m-0">
                         <div class="avatar-content">
@@ -340,9 +340,9 @@
                     <div>
                         <h2 class="fw-bolder mt-1">{{$paymentWithdraw['total_withdraw_pending']}} <a
                                 href="{{route('admin.withdraw.pending')}}"
-                                class="btn btn-sm text-small bg--white text-red">{{ __('locale.View All')}}</a>
+                                class="btn btn-sm text-small bg--white text-red">{{ __('View All')}}</a>
                         </h2>
-                        <p class="card-text">{{ __('locale.Withdraw Pending')}}</p>
+                        <p class="card-text">{{ __('Withdraw Pending')}}</p>
                     </div>
                     <div class="avatar bg-light-primary p-50 m-0">
                         <div class="avatar-content">
@@ -363,38 +363,38 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">{{ __('locale.New User list')}}</h4>
+                            <h4 class="card-title">{{ __('New User list')}}</h4>
                         </div>
                         <div class="table-responsive">
                             <table class="table table-hover">
                                 <thead class="table-dark">
                                     <tr>
-                                        <th>{{ __('locale.User')}}</th>
-                                        <th>{{ __('locale.Username')}}</th>
-                                        <th>{{ __('locale.Email')}}</th>
-                                        <th>{{ __('locale.Action')}}</th>
+                                        <th>{{ __('User')}}</th>
+                                        <th>{{ __('Username')}}</th>
+                                        <th>{{ __('Email')}}</th>
+                                        <th>{{ __('Action')}}</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @forelse($latestUser as $user)
                                     <tr>
-                                        <td data-label="{{ __('locale.User')}}">
+                                        <td data-label="{{ __('User')}}">
                                             <div class="row centerize">
                                                 <div class="col-md-3 thumb">
                                                     <img src="{{ $user->profile_photo_url ? $user->profile_photo_url : asset('images/portrait/small/avatar-s-11.jpg') }}"
-                                            alt="{{ __('locale.image')}}">
+                                            alt="{{ __('image')}}">
                                         </div>
                                                 <span class="col-md-9 name">{{$user->fullname}}</span>
                                             </div>
                                         </td>
-                                        <td data-label="{{ __('locale.Username')}}"><a
+                                        <td data-label="{{ __('Username')}}"><a
                                                 href="{{ route('admin.users.detail', $user->id) }}">{{ $user->username }}</a>
                                         </td>
-                                        <td data-label="{{ __('locale.Email')}}">{{ $user->email }}</td>
-                                        <td data-label="{{ __('locale.Action')}}">
+                                        <td data-label="{{ __('Email')}}">{{ $user->email }}</td>
+                                        <td data-label="{{ __('Action')}}">
                                             <a href="{{ route('admin.users.detail', $user->id) }}">
                                                 <button class="btn btn-icon btn-warning btn-sm"
-                                                data-bs-toggle="tooltip" data-original-title="{{ __('locale.Details')}}">
+                                                data-bs-toggle="tooltip" data-original-title="{{ __('Details')}}">
                                                 <i class="bi bi-display text-shadow"></i>
                                             </button>
                                             </a>
@@ -416,7 +416,7 @@
         <div class="col-xl-5">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">{{ __('locale.Last 30 days Withdraw History')}}</h5>
+                    <h5 class="card-title">{{ __('Last 30 days Withdraw History')}}</h5>
                     <div id="withdraw-line"></div>
                 </div>
             </div>
@@ -435,7 +435,7 @@
 @endif
 <button type="button" class="btn cron @if(Carbon\Carbon::parse($general->last_cron_run)->diffInSeconds()<600)
         btn-success @elseif(Carbon\Carbon::parse($general->last_cron_run)->diffInSeconds()<1200) btn-warning @else
-        btn-danger @endif "><i class="bi bi-clock"></i> {{ __('locale.Last Cron Run')}} : {{Carbon\Carbon::parse($general->last_cron_run)->difFforHumans()}}</button>
+        btn-danger @endif "><i class="bi bi-clock"></i> {{ __('Last Cron Run')}} : {{Carbon\Carbon::parse($general->last_cron_run)->difFforHumans()}}</button>
 @endpush
 
 @section('vendor-script')
