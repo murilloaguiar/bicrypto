@@ -95,7 +95,7 @@
    "Sign in": "Entrar",
    "New on our platform?": "Novo em nossa plataforma?",
    "Create an account": "Crie a sua conta aqui",
-
+   "Submit Again": "Envie novamente",
 
    "This week": "Essa semana",
    "Home": "Casa",
@@ -284,7 +284,7 @@
    "Login": "Login",
    "Pair list": "Lista de pares",
    "Coin Manager": "Gerente de moedas",
-   "Create your first wallet:": "Crie sua primeira carteira:",
+   "Create your first wallet:": "Crie sua primeira carteira: ",
    "Deposit Method": "Método de depósito ",
    "Withdraw Method": "Método de retirada",
    "Info": "info",

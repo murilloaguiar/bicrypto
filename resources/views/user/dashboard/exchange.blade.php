@@ -9,8 +9,8 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="card card-congratulation-medal" style="max-height:22vh;">
                 <div class="card-body">
-                    <h5>Welcome 🎉 {{auth()->user()->firstname}}</h5>
-                    <a href="{{route('user.exchange.market')}}" type="button" class="mt-3 btn btn-primary">Start Exchanging</a>
+                    <h5>{{__('Welcome')}} 🎉 {{auth()->user()->firstname}}</h5>
+                    <a href="{{route('user.exchange.market')}}" type="button" class="mt-3 btn btn-primary">{{__('Start Exchanging')}}</a>
                     <img src="{{asset('images/illustration/badge.svg')}}" class="congratulation-medal"
                         alt="Medal Pic" />
                 </div>
@@ -18,7 +18,7 @@
 
             <div class="card card-transaction">
                 <div class="card-header">
-                    <h4 class="card-title">Wallets</h4>
+                    <h4 class="card-title">{{__('Wallets')}}</h4>
                 </div>
                 <div class="card-body mb-1" style="max-height:46vh;overflow-y:auto;">
                     @forelse($wallets as $wallet)
@@ -40,19 +40,19 @@
                         <div class="fw-bolder">
                             @if ($wallet->symbol != 'USDT')
                             <a href="{{route('user.exchange.now', [$wallet->symbol, 'USDT'])}}"><button
-                                    class="btn btn-sm btn-primary">Exchange</button></a>
+                                    class="btn btn-sm btn-primary">{{__('Exchange')}}</button></a>
                             @else
-                                <a href="{{ route('user.deposit') }}" class="btn btn-success btn-sm">Deposit</a>
+                                <a href="{{ route('user.deposit') }}" class="btn btn-success btn-sm">{{__('Deposit')}}</a>
                             @endif
                         </div>
                     </div>
                     @empty
                         <div class="d-flex justify-content-between  align-items-center">
-                            <span class="text-warning">{{ __('locale.Create your first wallet:')}}</span>
+                            <span class="text-warning">{{ __('Create your first wallet:')}}</span>
                             <form method="POST" action="{{ route('user.wallet.create') }}">
                                 @csrf
                                 <input type="hidden" id="id" name="id" value="USDT">
-                                <button type="submit" class="btn btn-success btn-sm">Create Wallet</button></span>
+                                <button type="submit" class="btn btn-success btn-sm">{{__('Create Wallet')}}</button></span>
                             </form>
                         </div>
                     @endforelse
@@ -62,7 +62,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="card card-transaction">
                 <div class="card-header">
-                    <h4 class="card-title">Exchanges</h4>
+                    <h4 class="card-title">{{__('Exchanges')}}</h4>
                 </div>
                 <div class="card-body mb-1" style="max-height:70vh;overflow-y:auto;">
                     @forelse($exchanges as $exchange)
@@ -82,9 +82,9 @@
                             <div class="transaction-percentage">
                                 <h6 class="transaction-title">
                                     @if($exchange->type == 1)
-                                    <span class="text-success">{{ __('locale.Buy')}}</span>
+                                    <span class="text-success">{{ __('Buy')}}</span>
                                     @elseif($exchange->type == 2)
-                                    <span class="text-danger">{{ __('locale.Sell')}}</span>
+                                    <span class="text-danger">{{ __('Sell')}}</span>
                                     @endif
                                 </h6>
                                 @if($exchange->type == 1)
@@ -103,7 +103,7 @@
                         </div>
                     </div>
                     @empty
-                    <div colspan="100%"> {{ __('locale.No results found')}}!</div>
+                    <div colspan="100%"> {{ __('No results found')}}!</div>
                     @endforelse
                 </div>
             </div>
@@ -202,15 +202,14 @@
                             <div class="card">
                                 <div class="card-body text-center">
                                     <i class="bi bi-gift text-warning font-large-2 mb-1"></i>
-                                    <h5 class="card-title">Refer & Earn</h5>
+                                    <h5 class="card-title">{{__('Refer & Earn')}}</h5>
                                     <p class="card-text">
-                                        Refer your friends & Earn for 5% of every customer that complete 1 deposit in
-                                        the platform.
+                                        {{__('Refer your friends & Earn for 5% of every customer that complete 1 deposit in the platform.')}}
                                     </p>
                                     <!-- modal trigger button -->
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#referEarnModal">
-                                        Invite
+                                        {{__('Invite')}}
                                     </button>
                                 </div>
                             </div>
