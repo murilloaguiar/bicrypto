@@ -7,9 +7,9 @@ $configData = applClasses();
       <li class="nav-item me-auto">
         <a class="navbar-brand" href="{{route('admin.dashboard')}}">
           <span class="brand-logo">
-            <img src="{{getImage(imagePath()['logoIcon']['path'] .'/favicon.png')}}" alt="{{ __('locale.image')}}">
+            <img src="{{getImage(imagePath()['logoIcon']['path'] .'/favicon.png')}}" alt="{{ __('image')}}">
           </span>
-          <div class="brand-text"><img src="{{getImage(imagePath()['logoIcon']['path'] .'/logo.png')}}" alt="{{ __('locale.image')}}"></div>
+          <div class="brand-text"><img src="{{getImage(imagePath()['logoIcon']['path'] .'/logo.png')}}" alt="{{ __('image')}}"></div>
         </a>
       </li>
       <li class="nav-item nav-toggle">
@@ -28,7 +28,7 @@ $configData = applClasses();
       @foreach($menuData[0]->menu as $menu)
       @if(isset($menu->navheader))
       <li class="navigation-header">
-        <span>{{ __('locale.'.$menu->navheader) }}</span>
+        <span>{{ __($menu->navheader) }}</span>
         <i class="bi bi-three-dots-vertical"></i>
       </li>
       @else
