@@ -20,8 +20,8 @@
                         alt="{{ __('locale.image')}}"></div>
             </a>
 
-          <h4 class="card-title mb-1">Welcome! 👋</h4>
-          <p class="card-text mb-2">Please sign-in to your account and start the adventure</p>
+          <h4 class="card-title mb-1">{{__('Welcome')}}! 👋</h4>
+          <p class="card-text mb-2">{{__('Please sign-in to your account and start the adventure')}}</p>
 
           @if (session('status'))
             <div class="alert alert-success mb-1 rounded-0" role="alert">
@@ -34,7 +34,7 @@
           <form class="auth-login-form mt-2" method="POST" action="{{ route('login') }}">
             @csrf
             <div class="mb-1">
-              <label for="login-email" class="form-label">Email / Username</label>
+              <label for="login-email" class="form-label">{{__('Email / Username')}}</label>
               <input type="text" class="form-control @error('email') is-invalid @enderror @error('username') is-invalid @enderror"
                id="login-email" name="email"
                 placeholder="john@example.com" aria-describedby="login-email" tabindex="1" autofocus
@@ -48,10 +48,10 @@
 
             <div class="mb-1">
               <div class="d-flex justify-content-between">
-                <label class="form-label" for="login-password">Password</label>
+                <label class="form-label" for="login-password">{{__('Password')}}</label>
                 @if (Route::has('password.request'))
                   <a href="{{ route('password.request') }}">
-                    <small>Forgot Password?</small>
+                    <small>{{__('Forgot Password?')}}</small>
                   </a>
                 @endif
               </div>
@@ -66,17 +66,17 @@
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="remember" name="remember" tabindex="3"
                   {{ old('remember') ? 'checked' : '' }} />
-                <label class="form-check-label" for="remember"> Remember Me </label>
+                <label class="form-check-label" for="remember"> {{__('Remember Me')}} </label>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary w-100" tabindex="4">Sign in</button>
+            <button type="submit" class="btn btn-primary w-100" tabindex="4">{{__('Sign in')}}</button>
           </form>
 
           <p class="text-center mt-2">
-            <span>New on our platform?</span>
+            <span>{{__('New on our platform?')}}</span>
             @if (Route::has('register'))
               <a href="{{ route('register') }}">
-                <span>Create an account</span>
+                <span>{{__('Create an account')}}</span>
               </a>
             @endif
           </p>
