@@ -124,13 +124,13 @@
 
         <div class="col-md-6">
             <div class="section-heading" data-aos="fade-up">
-                <h2 class="heading-line bold"><span class="light">{{ $card_section['0'] }}</span> <br>{{ $card_section['1'] }}</h2>
-                <p class="lead">{{ $card_section['2'] }}</p>
+                <h2 class="heading-line bold"><span class="light">{{ __($card_section['0']) }}</span> <br>{{ __($card_section['1']) }}</h2>
+                <p class="lead">{{ __($card_section['2']) }}</p>
             </div>
 
-            <p class="mb-5">{{ $card_section['3'] }}</p>
+            <p class="mb-5">{{ __($card_section['3']) }}</p>
 
-            <a href="/login" class="btn btn-rounded btn-outline-darker">{{ $card_section['4'] }}</a>
+            <a href="/login" class="btn btn-rounded btn-outline-darker">{{ __($card_section['4']) }}</a>
         </div>
     </div>
 </x-utils.container>

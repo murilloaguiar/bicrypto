@@ -7,13 +7,13 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6 text-center @rtl text-md-end @else text-md-start @endrtl">
-                <span class="py-2" data-aos="@rtl fade-left @else fade-right @endrtl">{{ $heading_section['0'] }}</span>
-                <h1 class="bold font-md display-lg-2 mt-3" data-aos="@rtl fade-left" @else fade-right @endrtl data-aos-delay="100">{{ $heading_section['1'] }} <span class="d-block">{{ $heading_section['2'] }}</span></h1>
+                <span class="py-2" data-aos="@rtl fade-left @else fade-right @endrtl">{{ __($heading_section['0']) }}</span>
+                <h1 class="bold font-md display-lg-2 mt-3" data-aos="@rtl fade-left" @else fade-right @endrtl data-aos-delay="100">{{ __($heading_section['1']) }} <span class="d-block">{{ __($heading_section['2']) }}</span></h1>
 
-                <p class="lead" data-aos="@rtl fade-left" @else fade-right @endrtl data-aos-delay="200">{{ $heading_section['3'] }}</p>
+                <p class="lead" data-aos="@rtl fade-left" @else fade-right @endrtl data-aos-delay="200">{{ __($heading_section['3']) }}</p>
 
                 <div class="my-5" data-aos="@rtl fade-left" @else fade-right @endrtl data-aos-delay="400">
-                    <a href="/login" class="btn btn-rounded btn-lg btn-primary px-4 mx-auto @rtl ms-md-0 @else me-md-0 @endrtl">{{ $heading_section['4'] }} <i class="fas fa-long-arrow-alt-right ms-2"></i></a>
+                    <a href="/login" class="btn btn-rounded btn-lg btn-primary px-4 mx-auto @rtl ms-md-0 @else me-md-0 @endrtl">{{__($heading_section['4']) }} <i class="fas fa-long-arrow-alt-right ms-2"></i></a>
                 </div>
             </div>
 
@@ -34,9 +34,9 @@
                                 <img src="{{ asset("img/home/".$frontend_images->img4) }}" alt="...">
                             </figure>
 
-                            <p class="mt-4 text-muted mb-0">{{ $heading_section['5'] }}</p>
+                            <p class="mt-4 text-muted mb-0">{{ __($heading_section['5']) }}</p>
                             <hr class="my-3 mx-auto w-25">
-                            <h6 class="h6 mb-0">{{ $heading_section['6'] }}</h6>
+                            <h6 class="h6 mb-0">{{ __($heading_section['6']) }}</h6>
                         </div>
                     </div>
                 </figure>
