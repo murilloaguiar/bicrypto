@@ -41,7 +41,7 @@
                         </tr>
                         @empty
                         <tr>
-                            <td class="text-muted text-end" colspan="100%">{{ __($empty_message) }}</td>
+                            <td class="text-muted text-end" colspan="100%"></td>
                         </tr>
                         @endforelse
                     </tbody>
@@ -97,7 +97,7 @@
                         </tr>
                         @empty
                         <tr>
-                            <td class="text-muted text-center" colspan="100%">{{ __($empty_message) }}</td>
+                            <td class="text-muted text-center" colspan="100%"></td>
                         </tr>
                         @endforelse
                     </tbody>
