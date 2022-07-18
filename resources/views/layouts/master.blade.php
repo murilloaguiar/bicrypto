@@ -22,7 +22,8 @@ data-textdirection="{{ env('MIX_CONTENT_DIRECTION') === 'rtl' ? 'rtl' : 'ltr' }}
     @if(Request::is('user**'))
         @include('partials.seo')
     @endif
-    <link rel="shortcut icon" type="image/png" href="{{getImage(imagePath()['logoIcon']['path'] .'/favicon.png')}}">
+    {{-- <link rel="shortcut icon" type="image/png" href="{{getImage(imagePath()['logoIcon']['path'] .'/favicon.png')}}"> --}}
+    <link rel="shortcut icon" type="image/png" href="{{asset('images/favicon.png')}}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
     @include('panels/styles')
 </head>

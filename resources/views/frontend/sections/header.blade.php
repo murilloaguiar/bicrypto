@@ -10,13 +10,15 @@
         </button>
 
         <x-utils.link href="#main" class="navbar-brand">
-            <img src="{{getImage(imagePath()['logoIcon']['path'] .'/logo.png')}}" class="logo logo-sticky">
+            {{-- <img src="{{getImage(imagePath()['logoIcon']['path'] .'/logo.png')}}" class="logo logo-sticky"> --}}
+            <img src="{{asset('images/logo.png')}}" class="logo logo-sticky">
         </x-utils.link>
 
         <div class="collapse navbar-collapse ms-auto" id="main-navbar">
             <div class="sidebar-brand">
                 <x-utils.link :href="route('home')">
-                    <img src="{{getImage(imagePath()['logoIcon']['path'] .'/logo.png')}}" class="logo">
+                    {{-- <img src="{{getImage(imagePath()['logoIcon']['path'] .'/logo.png')}}" class="logo"> --}}
+                    <img src="{{asset('images/logo.png')}}" class="logo">
                 </x-utils.link>
             </div>
 
@@ -34,7 +36,7 @@
                     >
                         <x-slot name="text">
                             <i class="fas fa-sign-in-alt d-none d-md-inline me-md-0 me-lg-2"></i>
-                            <span class="d-md-none d-lg-inline">Login</span>
+                            <span class="d-md-none d-lg-inline">{{__('Login')}}</span>
                         </x-slot>
                     </x-utils.link>
 
@@ -46,7 +48,7 @@
                         >
                             <x-slot name="text">
                                 <i class="fas fa-user-plus d-none d-md-inline me-md-0 me-lg-2"></i>
-                                <span class="d-md-none d-lg-inline">Signup</span>
+                                <span class="d-md-none d-lg-inline">{{__('Signup')}}</span>
                             </x-slot>
                         </x-utils.link>
                     @endif

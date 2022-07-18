@@ -17,7 +17,8 @@ data-textdirection="{{ env('MIX_CONTENT_DIRECTION') === 'rtl' ? 'rtl' : 'ltr' }}
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <meta name="author" content="MashDiv">
   <title>@yield('title') - {{ sitename() }}</title>
-  <link rel="shortcut icon" type="image/png" href="{{getImage(imagePath()['logoIcon']['path'] .'/favicon.png')}}">
+  {{-- <link rel="shortcut icon" type="image/png" href="{{getImage(imagePath()['logoIcon']['path'] .'/favicon.png')}}"> --}}
+  <link rel="shortcut icon" type="image/png" href="{{asset('images/favicon.png')}}">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
 
   {{-- Include core + vendor Styles --}}

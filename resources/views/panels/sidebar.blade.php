@@ -7,9 +7,11 @@ $configData = applClasses();
       <li class="nav-item me-auto">
         <a class="navbar-brand" href="{{route('admin.dashboard')}}">
           <span class="brand-logo">
-            <img src="{{getImage(imagePath()['logoIcon']['path'] .'/favicon.png')}}" alt="{{ __('image')}}">
+            {{-- <img src="{{getImage(imagePath()['logoIcon']['path'] .'/favicon.png')}}" alt="{{ __('image')}}"> --}}
+            <img src="{{asset('images/favicon.ico')}}">
           </span>
-          <div class="brand-text"><img src="{{getImage(imagePath()['logoIcon']['path'] .'/logo.png')}}" alt="{{ __('image')}}"></div>
+          {{-- <div class="brand-text"><img src="{{getImage(imagePath()['logoIcon']['path'] .'/logo.png')}}" alt="{{ __('image')}}"></div> --}}
+          <div class="brand-text"><img src="{{asset('images/logo.png')}}" class="logo logo-sticky"></div>
         </a>
       </li>
       <li class="nav-item nav-toggle">

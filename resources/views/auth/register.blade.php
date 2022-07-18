@@ -18,10 +18,11 @@
           <div class="card mb-0">
               <div class="card-body">
                   <a href="#" class="col d-flex justify-content-center mb-1">
-                      <img style="height:50px;" src="{{getImage(imagePath()['logoIcon']['path'] .'/favicon.png')}}"
+                      {{-- <img style="height:50px;" src="{{getImage(imagePath()['logoIcon']['path'] .'/favicon.png')}}"
                           alt="{{ __('image')}}">
                       <div class="brand-text"><img src="{{getImage(imagePath()['logoIcon']['path'] .'/logo.png')}}"
-                              alt="{{ __('image')}}"></div>
+                              alt="{{ __('image')}}"></div> --}}
+                     <div class="brand-text"><div class="brand-text"><img src="{{asset('images/logo.png')}}"></div>
                   </a>
 
                   <h4 class="card-title mb-1">{{__('Adventure starts here')}} 🚀</h4>

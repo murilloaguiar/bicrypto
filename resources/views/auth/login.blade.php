@@ -14,10 +14,12 @@
       <div class="card mb-0">
         <div class="card-body">
             <a href="#" class="col d-flex justify-content-center mb-1">
-                <img style="height:50px;" src="{{getImage(imagePath()['logoIcon']['path'] .'/favicon.png')}}"
+                {{-- <img style="height:50px;" src="{{getImage(imagePath()['logoIcon']['path'] .'/favicon.png')}}"
                     alt="{{ __('locale.image')}}">
                 <div class="brand-text"><img src="{{getImage(imagePath()['logoIcon']['path'] .'/logo.png')}}"
-                        alt="{{ __('locale.image')}}"></div>
+                        alt="{{ __('locale.image')}}"></div> --}}
+               {{-- <img style="height:50px;"  src="{{asset('images/favicon.ico')}}"> --}}
+               <div class="brand-text"><div class="brand-text"><img src="{{asset('images/logo.png')}}"></div>
             </a>
 
           <h4 class="card-title mb-1">{{__('Welcome')}}! 👋</h4>

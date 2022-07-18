@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $general->sitename($page_title ?? '') }}</title>
     @include('partials.seo')
-    <link rel="shortcut icon" type="image/png" href="{{getImage(imagePath()['logoIcon']['path'] .'/favicon.png')}}">
+    {{-- <link rel="shortcut icon" type="image/png" href="{{getImage(imagePath()['logoIcon']['path'] .'/favicon.png')}}"> --}}
+    <link rel="shortcut icon" type="image/png" href="{{asset('images/favicon.png')}}">
     @yield('meta')
 
     @stack('before-styles')
